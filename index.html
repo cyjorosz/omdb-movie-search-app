@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <title>Movie Search</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="page-container">
+  <div class="search-container">
+    <div id="searchBar">
+      <input type="search" placeholder="Movie title..." name="movie" id="searchInput">
+      <button onclick="handleSubmit()">Search</button>
+    </div>
+  </div>
+  <div id="searchResults"></div>
+  <div class="error-handling-container">
+    <div id="noResults">
+      <p><span id="searchTerm"></span> did not yield any results.</p>
+      <p>Suggestions:</p>
+      <ul>
+        <li>Please ensure you've spelled the movie title correctly</li>
+        <li>Try another movie</li>
+      </ul>
+    </div>
+    <div id="formValidation">Please enter a movie name in the search bar at the top of the page</div>
+    <div id="loadingIndicator"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
