@@ -7,6 +7,7 @@ function handleSubmit() {
 
   if (userInputIsEmpty(searchTerm)) {
     clearPreviousSearchResults();
+    hideMovieNotFound();
     displayEmptyUserInputMessage();
   } else {
     hideEmptyUserInputMessage();
@@ -45,7 +46,6 @@ function displayMovieResults(movieObject) {
     movieContainer.innerHTML += '<div class="movie-poster"><img src="' + movie.Poster + '" alt="Movie poster" class="poster-image"><p class="movie-title">' + movie.Title + '</p></div>';
   });
 }
-
 
 function responseHasResults(response) {
   if (response.Response === 'True') {
