@@ -20,5 +20,7 @@ The app can be run locally using a web server like [http-server](https://www.npm
 The following features are currently not implemented, but are ideas I might get around to:
 - Loading indicator during search
 - Lazy loading of images
+- Pagination
 - Show synopsys
 - Search on pressing Enter
+
